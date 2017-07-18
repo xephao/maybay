@@ -1,0 +1,71 @@
+
+// Màu mặc định cho toàn website
+@color1:    #147fc3; // Màu xanh đậm
+@color2:    #3483c8; // Xanh nhat khi hover
+
+@color3:    #00AEEF; // Màu của Button
+@color3_hover:    #00AEEF; // Màu của Button
+
+@color4:    #e32f44;
+@color5:    #ff9c00;
+@color_white:     #ffffff;
+@color_black:     #000000;
+@red:       #ff0000;
+@color_eee : #eeeeee;
+
+@color_text_333:   #333333;
+@color_text_666 : #666666;
+@color_text_555 : #555555;
+@color_text_999 : #999999;
+@color_text_bbb : #bbbbbb;
+@color_text_1a : #1a1a1a;
+
+// Trang main
+@bg_gray: #f8f8f8;
+@bg_white: #ffffff;
+
+@font_01 : 'Roboto', sans-serif;
+@font_02 : 'Times New Roman', Times, 'Baskerville', Georgia, serif;
+@font_03 : 'ArimaMadurai';
+
+// Trang News
+@color_boder_ddd : #dddddd;
+@color_boder_c8c : #c8c8c8;
+@color_boder_white : #ffffff;
+@bg_ddd : #dddddd;
+
+// Trang Product
+@color_step_1 : #007CC5;
+@color_step_2 : #007CC5;
+@color_step_3 : #007CC5;
+@color_step_4 : #007CC5;
+@nen_tieu_de : #ffecd5;
+@color_text_nen_tieu_de : #333333;
+
+@mau_nen_icon : #e32f44;
+
+// Các hàm mặc định
+.bg_white_transparent(@opacity:1){
+    background: rgba(255,255,255,@opacity);
+}
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -o-border-radius: @radius;
+    -ms-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.transform_translate(@x , @y){
+  -webkit-transform:translate(@x , @y);
+  -moz-transform:translate(@x , @y);
+  -o-transform:translate(@x , @y);
+  -ms-transform:translate(@x , @y);
+  transform:translate(@x , @y);
+}
+.width_calc(@a , @b){
+    width: -moz-calc(@a ~'-' @b);
+    width: -webkit-calc(@a ~'-' @b);
+    width: -o-calc(@a ~'-' @b);
+    width: calc(@a ~'-' @b);
+}
